@@ -21,3 +21,7 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/', function () {
     return view('landing');
 })->name('landing');
+
+Route::get('/detail', function () {
+    return view('pages.detail');
+})->name('detail');
